@@ -8,8 +8,22 @@
     
 </head>
 <body>
-    <div id="grid">
-        
+    <h1>Etch-a-sketch</h1>
+    <div class="grid-buttons">
+        <div class="inputs">
+            <div class="color-circle"></div>
+            <input type="color" class="color-picker">
+            <button onclick="toggleGrid()" class="toggle-button">Toggle grid</button>
+            <button onclick="toggleRainbow()" class="rainbow-button">Rainbow</button>
+            <button onclick="toggleEraser()" class="eraser-button">Eraser</button>
+            <button onclick="togglePickColor()" class="pick-color-button">Pick color</button>
+            <button onclick="clearGrid()">Clear grid</button>
+            <input type="range" class="squares-input" name="squares-input" min="1" step="1" max="64" value="16">
+            <label for="squares-input" class="squares-input-label">16 x 16</label>
+
+        </div>
+
+        <div class="grid"></div>
     </div>
 
     <script src="main.js"></script>
