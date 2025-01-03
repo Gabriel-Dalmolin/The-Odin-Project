@@ -1,0 +1,58 @@
+body {
+    background-color: snow;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+    width: 400px;
+    height: 500px;
+    background-color: lightgrey;
+    border-radius: 25px;
+}
+
+#display {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: end;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    width: 350px;
+    height: 100px;
+    border-radius: 15px;
+    background-color: yellowgreen;
+}
+
+#display p {
+    font-size: 18px;
+    margin: 0px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#buttons * {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    padding: 30px;
+    margin: 5px;
+    width: 80px;
+    height: 55px;
+    align-content: center;
+    font-size: 25px;
+    border-radius: 5px;
+}

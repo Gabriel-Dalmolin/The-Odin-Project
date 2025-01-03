@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="calculator">
+        <div id="display">
+            <p id="operation"></p>
+            <p id="result"></p>
+        </div>
+        <div id="buttons">
+            <div id="first-line">
+                <button onclick="buttonClicked(this)">7</button>
+                <button onclick="buttonClicked(this)">8</button>
+                <button onclick="buttonClicked(this)">9</button>
+                <button onclick="buttonClicked(this)">/</button>
+            </div>
+            <div id="second-line">
+                <button onclick="buttonClicked(this)">4</button>
+                <button onclick="buttonClicked(this)">5</button>
+                <button onclick="buttonClicked(this)">6</button>
+                <button onclick="buttonClicked(this)">*</button>
+            </div>
+            <div id="third-line">
+                <button onclick="buttonClicked(this)">1</button>
+                <button onclick="buttonClicked(this)">2</button>
+                <button onclick="buttonClicked(this)">3</button>
+                <button onclick="buttonClicked(this)">-</button>
+            </div>
+            <div id="fourth-line">
+                <button onclick="buttonClicked(this)">.</button>
+                <button onclick="buttonClicked(this)">0</button>
+                <button onclick="buttonClicked(this)">+</button>
+                <button onclick="buttonClicked(this)">=</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
