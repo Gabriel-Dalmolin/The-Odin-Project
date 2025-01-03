@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#title {
+    text-align: center;
+}
+
+.results {
+    text-align: center;
+}
+
+#wins-area {
+    display: flex;
+    flex-direction: column;
+}
+
+#wins-area h2, p {
+    text-align: center;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#paper, #rock, #scissors {
+    font-size: 40px;
+    margin: 30px
+}
