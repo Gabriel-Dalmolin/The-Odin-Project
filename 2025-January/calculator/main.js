@@ -7,7 +7,7 @@ const resultLabel = document.querySelector("#result")
 
 function operate(first_number, second_number, operation){
     if (operation === "+"){
-        return first_number + second_number;
+        return Number(first_number) + Number(second_number);
     } else if (operation === "-"){
         return first_number - second_number;
     } else if (operation === "/" && second_number != 0){

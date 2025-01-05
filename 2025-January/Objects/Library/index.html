@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="overlay"></div>
+    <div id="books">
+        <button id="open_form" onclick="open_form()"><p id="rotating_text">+<p></button>
+    </div>
+
+    <div id="options">
+        <h1 class="myTitle">Options</h1>
+        <hr class="divider">
+        <div id="divBooksRead">
+            <h3>Number of books read:</h3>
+            <h1 id="booksRead">0</h1>
+        </div>
+        
+    </div>
+
+    <div id="input-form">
+        <h1>Add new book</h1>
+        <hr class="input-form-divider">
+
+        <table id="inputs">
+            <tr><td><label for="name-input">Book name</label></td></tr>
+            <tr><td><input type="text" id="name-input"></td></tr>
+
+            <tr><td><label for="author-input">Author</label></td></tr>
+            <tr><td><input type="text" id="author-input"></td></tr>
+
+            <tr><td><label for="pages-input">Number of pages</label></td></tr>
+            <tr><td><input type="text" id="pages-input"></td></tr>
+        </table>
+
+        <button id="add_book" onclick="create_new_book()">Add book</button>
+
+        <hr class="input-form-divider">
+        <p id="message"></p>
+        <button id="close_form" onclick="close_form()">Go back</button>
+    </div>
+
+    <div id="edit-form">
+        <h1>Edit book</h1>
+        <hr class="input-form-divider">
+
+        <table id="inputs">
+            <tr><td><label for="name-input">Book name</label></td></tr>
+            <tr><td><input type="text" id="name-edit-input"></td></tr>
+
+            <tr><td><label for="author-input">Author</label></td></tr>
+            <tr><td><input type="text" id="author-edit-input"></td></tr>
+
+            <tr><td><label for="pages-input">Number of pages</label></td></tr>
+            <tr><td><input type="text" id="pages-edit-input"></td></tr>
+        </table>
+
+        <button id="add_book" onclick="create_new_book()">Add book</button>
+
+        <hr class="input-form-divider">
+        <button id="delete_book" onclick="delete_book()">Delete book</button>
+        <button id="close_form" onclick="close_edit_form()">Go back</button>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
